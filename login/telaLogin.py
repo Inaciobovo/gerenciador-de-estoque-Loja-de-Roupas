@@ -1,5 +1,5 @@
 import streamlit as st
-import login.menu as menu
+import views.menu as menu
 
 def login():
     USUARIO = "admin"
