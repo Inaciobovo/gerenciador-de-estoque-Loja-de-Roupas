@@ -1,7 +1,7 @@
 import streamlit as st
 import views.menu as menu
 
-def login():
+def loginPrincipal():
     USUARIO = "admin"
     SENHA = "admin123"
     #tela de login

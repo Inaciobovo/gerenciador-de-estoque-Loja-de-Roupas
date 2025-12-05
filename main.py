@@ -1,3 +1,3 @@
-from login.telaLogin import login
+from login.telaLogin import loginPrincipal  
 
-login()
+loginPrincipal()

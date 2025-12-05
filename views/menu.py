@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from utils.cadastrarProdutos import cadastroProduto
+from views.iniciarDia import iniciarRegistroDoDia
 
 def menu():
     st.title("Bella Modas - Central de Vendas")
@@ -12,7 +13,7 @@ def menu():
    
     aba = st.sidebar.radio(
         "Menu",
-        ("Menu","Cadastro de Produtos", "Relatórios", "Estoque", "Criar Pedidos")
+        ("Menu","Iniciar Dia", "Cadastro de Produtos", "Relatórios", "Estoque", "Criar Pedidos")
     )
 
     if aba == "Menu":
@@ -27,3 +28,5 @@ def menu():
     elif aba == "Cadastro de Produtos":
         cadastroProduto()
     
+    elif aba == "Iniciar Dia":
+        iniciarRegistroDoDia()
